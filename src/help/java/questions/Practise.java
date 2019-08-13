@@ -23,23 +23,17 @@ public class Practise {
         int num1[] = {1, 3, 5, 7, 9}; // compare two arrays have the same values
         int num2[] = {5, 1, 3, 9, 7, 66};
         Practise p = new Practise();
-        p.test(a);
+        p.test(num);
 
     }
 
-    public void test(int[] values) {
-
-        int min = values[0];
-        int max = values[0];
-        for (int i = 0; i < values.length; i++) {
-            if (min > values[i]) {
-                min = values[i];
-            } else if (max< values[i]){
-            	max = values[i];
-			}
+    public void test(int numbers) {
+        int reverse =0;
+        while (numbers!=0){
+            reverse = reverse*10 + numbers%10;
+            numbers = numbers/10;
         }
-		System.out.println(min);
-		System.out.println(max);
+        System.out.println(reverse);
 
     }
 
