@@ -32,10 +32,10 @@ out
 .gradle
 
 #by me
-.html
-.png
-.gif
-.js
+*.html
+*.png
+*.gif
+*.js
 
 
 
