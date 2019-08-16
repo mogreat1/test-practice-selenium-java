@@ -1,22 +1,39 @@
 package docker;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
-public class ChromeTest2 {
+public class ChromeTest2 extends BaseTest{
 
     @Test
-    public void test2() throws MalformedURLException {
-        URL url = new URL("http://localhost:4444/wd/hub");
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+    public void test4() throws MalformedURLException
+    {
 
-        RemoteWebDriver remoteWebDriver = new RemoteWebDriver(url, capabilities);
-        remoteWebDriver.get("http://gmail.com");
-        System.out.println(remoteWebDriver.getTitle());
+        driver.get("http://gmail.com");
+        System.out.println(driver.getTitle());
+
+    }
+
+    @Test
+    public void test5() throws MalformedURLException
+    {
+
+        driver.get("http://gmail.com");
+        System.out.println(driver.getTitle());
+
+    }
+
+    @Test
+    public void test6() throws MalformedURLException
+    {
+
+        driver.get("http://gmail.com");
+        System.out.println(driver.getTitle());
+
     }
 
 }

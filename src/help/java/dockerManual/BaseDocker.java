@@ -1,14 +1,12 @@
-package docker;
+package dockerManual;
 
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BaseDocker {
+ class BaseDocker {
 
     public static void main(String[] args) throws MalformedURLException {
         BaseDocker baseDocker = new BaseDocker();
