@@ -2,6 +2,7 @@ package questions;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Practise {
@@ -25,15 +26,12 @@ public class Practise {
         Practise p = new Practise();
         p.test(num);
 
+
+
     }
 
-    public void test(int numbers) {
-        int reverse =0;
-        while (numbers!=0){
-            reverse = reverse*10 + numbers%10;
-            numbers = numbers/10;
-        }
-        System.out.println(reverse);
+    public void test(int num) {
+
 
     }
 
