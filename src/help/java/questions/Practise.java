@@ -1,9 +1,7 @@
 package questions;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Practise {
 
@@ -24,13 +22,18 @@ public class Practise {
         int num1[] = {1, 3, 5, 7, 9}; // compare two arrays have the same values
         int num2[] = {5, 1, 3, 9, 7, 66};
         Practise p = new Practise();
-        p.test(num);
+
+
 
 
 
     }
 
-    public void test(int num) {
+    public void test() {
+
+
+
+
 
 
     }
