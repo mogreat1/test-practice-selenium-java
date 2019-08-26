@@ -21,16 +21,26 @@ public class Practise {
         int array[] = {4, 5, 5, 5, 4, 6, 6, 9, 4, 88, 9, 4, 5, 66}; // Print unique number from the array
         int num1[] = {1, 3, 5, 7, 9}; // compare two arrays have the same values
         int num2[] = {5, 1, 3, 9, 7, 66};
+        //Write a function which will return index and and value of each first
+        // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
+        String values = "assddd";
         Practise p = new Practise();
-
-
-
-
+        Map<Integer, Character> map = p.test(values);
+        for(Map.Entry entry: map.entrySet()){
+            System.out.println(entry.getKey() +" "+entry.getValue());
+        }
 
     }
 
-    public void test() {
+    public Map<Integer, Character> test(String values) {
+        Map<Integer, Character> map = new HashMap<>();
+        for(int i =0; i<values.length();i++){
+            if(!map.containsValue(values.charAt(i))){
+                map.put(i, values.charAt(i));
+            }
+        }
 
+        return map;
 
 
 
