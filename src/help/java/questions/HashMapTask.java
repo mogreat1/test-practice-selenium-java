@@ -9,7 +9,7 @@ public class HashMapTask {
         //Write a function which will return index and and value of each first
         // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
         String values = "assddd";
-        Practise p = new Practise();
+        HashMapTask p = new HashMapTask();
         Map<Integer, Character> map = p.test(values);
         for(Map.Entry entry: map.entrySet()){
             System.out.println(entry.getKey() +" "+entry.getValue());

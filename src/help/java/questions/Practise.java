@@ -25,22 +25,29 @@ public class Practise {
         // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
         String values = "assddd";
         Practise p = new Practise();
-        Map<Integer, Character> map = p.test(values);
-        for(Map.Entry entry: map.entrySet()){
-            System.out.println(entry.getKey() +" "+entry.getValue());
-        }
+        p.test(array);
 
     }
 
-    public Map<Integer, Character> test(String values) {
-        Map<Integer, Character> map = new HashMap<>();
-        for(int i =0; i<values.length();i++){
-            if(!map.containsValue(values.charAt(i))){
-                map.put(i, values.charAt(i));
-            }
-        }
+    public void test(int [] values) {
+        List<Integer> list = new ArrayList<>();
 
-        return map;
+        for (int i =0; i<values.length; i++){
+            int k=0;
+            if (!list.contains(values[i])){
+                list.add(values[i]);
+                k++;
+                for (int j=i+1; j<values.length; j++){
+                    if (values[i]==values[j]){
+                        k++;
+                    }
+                }
+                if (k==1){
+                    System.out.println(values[i]);
+                }
+            }
+
+        }
 
 
 
