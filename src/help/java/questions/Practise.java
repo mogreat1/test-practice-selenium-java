@@ -1,11 +1,14 @@
 package questions;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Practise {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String names[] = {"one", "two", "three", "one", "four", "five", "five"}; // Dublicate elements
         int a[] = {1, 2, 4, 5, 6, 7, 8}; // 1. largest/ smallest number 2. missing number
         String s = "@#$%@# latin string $34534f"; // remove junk
@@ -25,11 +28,15 @@ public class Practise {
         // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
         String values = "assddd";
         Practise p = new Practise();
-        p.test(array);
 
-    }
 
-    public void test(int [] values)
-    {
-    }
 }
+
+    public void test(int [] values) {
+
+
+
+        }
+
+}
+
