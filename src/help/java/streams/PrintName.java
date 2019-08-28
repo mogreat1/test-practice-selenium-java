@@ -71,6 +71,7 @@ public class PrintName {
         names.add("woman");
         List<String> names1 = Arrays.asList("Asdf", "Don", "Alex", "Aaaa", "Rama");
 
+        System.out.println("concat-----------------");
        Stream<String> newStream = Stream.concat(names.stream(), names1.stream());
        newStream.sorted().forEach(s -> System.out.println(s));
     }
