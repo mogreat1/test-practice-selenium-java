@@ -29,30 +29,7 @@ public class Practise {
 
     }
 
-    public void test(int [] values) {
-        List<Integer> list = new ArrayList<>();
-
-        for (int i =0; i<values.length; i++){
-            int k=0;
-            if (!list.contains(values[i])){
-                list.add(values[i]);
-                k++;
-                for (int j=i+1; j<values.length; j++){
-                    if (values[i]==values[j]){
-                        k++;
-                    }
-                }
-                if (k==1){
-                    System.out.println(values[i]);
-                }
-            }
-
-        }
-
-
-
-
-
+    public void test(int [] values)
+    {
     }
-
 }
