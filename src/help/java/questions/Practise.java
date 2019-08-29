@@ -28,13 +28,22 @@ public class Practise {
         // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
         String values = "assddd";
         Practise p = new Practise();
+        p.test(a);
 
 
 }
 
     public void test(int [] values) {
+        int sum =0;
+        int sum2=0;
+            for (int i =0; i<values.length; i++){
+                sum=sum+values[i];
+            }
+            for (int i=values[0]; i<=values[values.length-1]; i++){
+                sum2=sum2+i;
+            }
 
-
+        System.out.println(sum2-sum);
 
         }
 
