@@ -28,19 +28,8 @@ public class Practise {
         // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
         String values = "assddd";
         Practise p = new Practise();
-
-
-
-    }
-
-    public int test(String[] values) {
-        int sum =0;
-        int sum2 =0;
-        for(int i = 0; i<values.length; i++){
-
-        }
-
-        return sum2-sum;
+        System.out.println("changes  are completed");
     }
 
 }
+
