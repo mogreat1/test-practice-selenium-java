@@ -11,7 +11,6 @@ public class OddOrEvenString {
 
     public static String getText(){
         //This method get text from a user
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your text");
         String text = scanner.nextLine();
