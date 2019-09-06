@@ -27,6 +27,9 @@ public class Practise {
         // repeated character in the string. Ex “assddd” -> 0,a; 1,s; 3, d
         String values = "assddd";
         //Print Buzz for numbers which can be divided by 5, Fizz for those can be divided by 3, FizzBuzz by both
+        ArrayList<String> list = new ArrayList<>(); //combine Strings but using Streams
+        list.add("one");
+        list.add("two");
 
         Practise p = new Practise();
         test();

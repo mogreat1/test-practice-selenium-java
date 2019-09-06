@@ -1,56 +1,59 @@
 package questions;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 public class ReverseString {
 
-	// Reverse a String
+	// Reverse a String ignoring special characters and spaces
 	// Difference between String and StringBuffer
 	// Do we have reverse function in String?
-	static String s = "Selenium";
 
-	public static void main(String[] args) {
 
-		reverseStringMethod1(s);
-		reverseStringMethod2(s);
-
-		String[] values = {"Racecar", "Was it a cat I saw", "dad", "New string"};
-		verifyIfStringPolindrom(values);
-
-	}
-
-	public static void reverseStringMethod1(String input) {
-		int length = s.length();
-		String rev = "";
-
-		for (int i = length - 1; i >= 0; i--) {
-			rev = rev + s.charAt(i);
-		}
-		System.out.println(rev);
-	}
-
-	public static void reverseStringMethod2(String input) {
-
+	public boolean stringBuffer(String input) {
+		input =input.replaceAll("[^a-zA-Z]", "");
 		StringBuffer sf = new StringBuffer(input);
-		System.out.println(sf.reverse());
-
+		return input.equalsIgnoreCase(sf.reverse().toString());
 	}
 
-	public static void verifyIfStringPolindrom(String[] values) {
-		//TODO: Verify if strings from the array are Polindrom or not
-		for (String value : values) {
-			String reverse = "";
-			for (int x = value.length() - 1; x >= 0; x--) {
-				reverse = reverse + value.charAt(x);
+	@Test
+	private void StringBufferTest(){
+		String testString = "- Was it a ca1t, I saw????????";
+		Assert.assertTrue(stringBuffer(testString));
+	}
 
+	public boolean reverseString(String string){
+		String reverse = "";
+		boolean result = false;
+		string =string.replaceAll("[^a-zA-Z]", "");
+		if(string.length()==0){
+			System.out.println("String is empty or contains only number and numbers");
+		} else {
+			for(int i =0; i<string.length(); i++){
+				reverse = string.charAt(i) + reverse;
 			}
-
-			if (value.equalsIgnoreCase(reverse)) {
-				System.out.println(value + " - This string is Polindrom");
-			} else {
-				System.out.println(value + " - This string is not Polindrom");
-			}
-
+			result =string.equalsIgnoreCase(reverse);
 		}
 
+		return result;
+	}
+
+	@Test
+	private void palindromeStringTest(){
+		String testString = "- Was it a ca1t, I saw????????";
+		Assert.assertTrue(reverseString(testString));
+	}
+
+	@Test
+	private void notPalindromeStringTest(){
+		String testString = "- Was it a cat, I sasw????????";
+		Assert.assertFalse(reverseString(testString));
+	}
+
+	@Test
+	private void emptyStringTest(){
+		String testString = "";
+		Assert.assertFalse(reverseString(testString));
 	}
 
 
