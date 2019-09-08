@@ -14,7 +14,6 @@ public class SplitString {
 		}
 		
 		System.out.println(rev);
-
 	}
 
 }

@@ -9,7 +9,6 @@ public class ReverseString {
 	// Difference between String and StringBuffer
 	// Do we have reverse function in String?
 
-
 	public boolean stringBuffer(String input) {
 		input =input.replaceAll("[^a-zA-Z]", "");
 		StringBuffer sf = new StringBuffer(input);

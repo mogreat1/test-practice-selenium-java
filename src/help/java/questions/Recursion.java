@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Recursion {
 
     public static void main(String[] args) {
-
         fizzBuzzRecursion(1, getInput());
 
     }
@@ -34,7 +33,7 @@ public class Recursion {
         } else {
             System.out.println(number);
         }
-        //And this part is repsonsible for increasing a number up to boundary value
+        //And this part is responsible for increasing a number up to boundary value
         if (number == boundary) {
             return;
         } else {

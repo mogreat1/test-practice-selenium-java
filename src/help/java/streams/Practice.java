@@ -14,11 +14,9 @@ public class Practice {
         String array[] ={"Ann", "Ban", "Arara", "Lol", "Karl"};
         String array2[] ={"Ana", "Ben", "Arara", "Agg", "Lark"};
 
-       Stream stream = Stream.concat(Arrays.asList(array).stream(), Arrays.asList().stream());
-        stream.forEach(o -> System.out.println(o));
 
 
-
+        System.out.println(Math.random());
 
     }
 }

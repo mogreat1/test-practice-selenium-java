@@ -1,4 +1,4 @@
-package questions;
+package basics;
 
 public class FinalConcept {
 

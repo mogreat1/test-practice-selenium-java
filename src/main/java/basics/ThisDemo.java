@@ -1,4 +1,4 @@
-package questions;
+package basics;
 
 public class ThisDemo {
 // I want to print the sum of the local and global variable which have the same name
