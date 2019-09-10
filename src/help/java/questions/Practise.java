@@ -33,7 +33,17 @@ public class Practise {
     ArrayList<String> list = new ArrayList<>(); //combine Strings but using Streams
     // list.add("one");
     //list.add("two");
+    @Test
+    private void test(){
+
+
+
+    }
+
+
 
 
 }
+
+
 
