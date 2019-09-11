@@ -1,24 +1,38 @@
 package questions;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 public class ReverseInteger {
 
-	public static void main(String[] args) {
-		// 1 method
-		long num = 43412345;
-		long rev = 0;
+    public int reverseNumbers(int num) {
+        int rev = 0;
+            while (num != 0) {
+                rev = rev * 10 + num % 10;
+                num = num / 10;
+            }
+            System.out.println(rev);
 
-		while (num != 0) {
-			rev = rev * 10 + num % 10;
-			num = num / 10;
 
-		}
+        return rev;
+    }
 
-		System.out.println(rev);
+    @Test
+    private void happyPath() {
+        int num = 1234;
+        Assert.assertEquals(reverseNumbers(num), 4321);
+    }
 
-		// 2 Method
+    @Test
+    private void zeroValue() {
+        int num = 0;
+        Assert.assertEquals(reverseNumbers(num), 0);
+    }
 
-		System.out.println(new StringBuffer(String.valueOf(rev)).reverse());
-
-	}
+    @Test
+    private void negativeValue() {
+        int num = -1234;
+		Assert.assertEquals(reverseNumbers(num), -4321);
+    }
 
 }
