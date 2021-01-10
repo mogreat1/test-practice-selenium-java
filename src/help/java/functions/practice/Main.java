@@ -1,7 +1,5 @@
 package functions.practice;
 
-import com.google.gson.internal.$Gson$Preconditions;
-
 import java.time.LocalDate;
 
 import static functions.practice.CustomerRegistrationValidator.*;
