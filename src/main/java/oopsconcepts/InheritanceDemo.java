@@ -11,7 +11,5 @@ public class InheritanceDemo {
 		InheritanceBMW bmw = new InheritanceBMW(speed, "model");
 		bmw.increaseSpeed();
 		bmw.headupDispayNavigation();
-
 	}
-
 }

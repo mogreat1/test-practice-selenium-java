@@ -1,9 +1,5 @@
 package questions;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class CountLettersInArray {
 
@@ -27,10 +23,7 @@ public class CountLettersInArray {
                 }  System.out.println(text[i] + " " + count);
 
                 count = 1;
-
-
             }
-
     }
 
 }

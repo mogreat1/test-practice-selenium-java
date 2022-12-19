@@ -9,8 +9,6 @@ public class InheritanceDemo {
 		
 		BMW bmw1 = new BMW(speed);
 		bmw1.increaseSpeed();
-		bmw1.headupDispayNAvigation();
-
+		bmw1.headUpDisplayNavigation();
 	}
-
 }

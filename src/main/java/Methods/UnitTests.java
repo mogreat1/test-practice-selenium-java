@@ -1,4 +1,4 @@
-package Methods;
+package methods;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,6 +18,4 @@ public class UnitTests {
         int output =methods.countA("alphabet");
         Assert.assertEquals(output, 2);
     }
-
-
 }

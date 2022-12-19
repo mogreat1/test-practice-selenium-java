@@ -32,7 +32,5 @@ public class HashSets {
 		treeSet.add("four");
 		treeSet.add("one");
 		System.out.println(treeSet);
-
 	}
-
 }

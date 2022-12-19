@@ -14,10 +14,8 @@ public class CalandarSelection extends BasicMethods {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
 		initialize();
 		driver.get("https://www.expedia.com/");
-
 	}
 
 	@Test

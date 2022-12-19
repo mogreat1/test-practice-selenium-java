@@ -6,7 +6,6 @@ public class Cars {
 	public Cars(int startSpeed) {
 		speed = startSpeed;
 	}
-	
 
 	public void increaseSpeed() {
 		speed++;

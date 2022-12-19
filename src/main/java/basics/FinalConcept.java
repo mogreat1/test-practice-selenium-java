@@ -12,7 +12,6 @@ public class FinalConcept {
 	}
 
 	public static void test1() {
-
 		try {
 			System.out.println("inside test1 method");
 			throw new RuntimeException("test");
@@ -23,6 +22,4 @@ public class FinalConcept {
 		}
 
 	}
-
-
 }

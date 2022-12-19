@@ -14,10 +14,8 @@ public class JSClick extends BasicMethods {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
 		initialize();
 		js = (JavascriptExecutor) driver;
-
 	}
 
 	@Test
@@ -25,7 +23,6 @@ public class JSClick extends BasicMethods {
 		driver.get("https://learn.letskodeit.com/p/practice");
 		WebElement checkBox = driver.findElement(By.id("bmwcheck"));
 		js.executeScript("arguments[0].click();", checkBox);
-
 	}
 
 	@Test
@@ -37,7 +34,6 @@ public class JSClick extends BasicMethods {
 
 		js.executeScript("arguments[0].click();", checkBox);
 		// checkBox.click();
-
 	}
 
 	@AfterMethod

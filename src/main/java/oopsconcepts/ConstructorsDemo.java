@@ -13,10 +13,5 @@ public class ConstructorsDemo {
 		ConstructorsCar c2 = new ConstructorsCar(10, 1);
 		System.out.println(c2.speed);
 		System.out.println(c2.gear);
-
-		
-		
 	}
-
-
 }

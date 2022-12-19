@@ -19,7 +19,6 @@ public class DragAndDropActions extends BasicMethods {
 		driver.get("https://jqueryui.com/droppable/");
 		js = (JavascriptExecutor) driver;
 		action = new Actions(driver);
-
 	}
 
 	@Test
@@ -34,8 +33,6 @@ public class DragAndDropActions extends BasicMethods {
 		// Click and hold, move to element, release, build and perform
 		action.clickAndHold(fromElement).moveToElement(toElement).release().build().perform();
 		Thread.sleep(2000);
-	
-
 	}
 
 	@AfterMethod

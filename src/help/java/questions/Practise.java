@@ -1,20 +1,21 @@
 package questions;
 
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Practise {
 
+    public static void main(String[] args) {
+        String one = "string";
+        String two = "string";
+        System.out.println(one ==two);
+    }
+
     String names[] = {"one", "two", "three", "one", "four", "five", "five"}; // Duplicate elements
     int numbers[] = {1, 2, 4, 5, 6, 7, 8}; // 1. largest/ smallest number 2. missing number
+    List<String> src = List.of("Java", "Java", "Python", "Kotlin", "Java");//find first element
     String s = "@#$%@# latin string $34534f"; // remove junk
     int x = 5; // swap values without third variable
     int y = 10;
@@ -36,15 +37,13 @@ public class Practise {
     //Print Buzz for numbers which can be divided by 5, Fizz for those can be divided by 3, FizzBuzz by both
     ArrayList<String> list = new ArrayList<>(); //combine Strings but using Streams
     // list.add("one");
-    //list.add("two");
+    // list.add("two");
 
     @Test
-    private void test() {
+    public void test() {
 
 
     }
-
-
 }
 
 

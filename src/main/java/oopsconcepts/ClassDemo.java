@@ -14,6 +14,4 @@ public class ClassDemo {
 		System.out.println(benz.getYear());
 		
 	}
-
-
 }

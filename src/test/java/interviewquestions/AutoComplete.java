@@ -1,11 +1,9 @@
 package interviewquestions;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -22,6 +20,13 @@ public class AutoComplete extends BasicMethods {
 
 		initialize();
 
+	}
+	@Test
+	public void test2() throws InterruptedException {
+		//open browser
+		//maximasi
+		//clean cache
+		//
 	}
 
 	@Test

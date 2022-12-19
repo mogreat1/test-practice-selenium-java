@@ -13,10 +13,8 @@ public class JSWindowSize extends BasicMethods {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
 		initialize();
 		js = (JavascriptExecutor) driver;
-
 	}
 
 	@Test
@@ -30,7 +28,6 @@ public class JSWindowSize extends BasicMethods {
 
 		//System.out.println("Height is: " + height);
 		//System.out.println("Width is: " + width);
-
 	}
 
 	@AfterMethod

@@ -16,7 +16,4 @@ public class WhileDemo {
 			i++;
 		} while (i <10);
 	}
-	
-	
-
 }

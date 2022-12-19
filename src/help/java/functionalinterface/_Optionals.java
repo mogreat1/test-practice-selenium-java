@@ -1,4 +1,4 @@
-package functions;
+package functionalinterface;
 
 import org.testng.annotations.Test;
 

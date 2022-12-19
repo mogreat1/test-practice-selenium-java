@@ -19,7 +19,5 @@ public class ArrayListEx {
 		System.out.println(a.contains("testing"));
 		System.out.println(a.indexOf("J1"));
 		System.out.println(a.size());
-
 	}
-
 }

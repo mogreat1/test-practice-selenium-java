@@ -46,6 +46,4 @@ public class ArrayQuestions {
         int min = minNumber(numbers);
         Assert.assertEquals(min, 0, "Array isn't empty");
     }
-
-
 }

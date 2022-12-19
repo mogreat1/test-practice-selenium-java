@@ -15,7 +15,6 @@ public class JSScrollingElementIntoView extends BasicMethods {
 	public void setUp() throws Exception {
 		initialize();
 		js = (JavascriptExecutor) driver;
-
 	}
 
 	@Test
@@ -38,7 +37,6 @@ public class JSScrollingElementIntoView extends BasicMethods {
 
 		js.executeScript("window.scrollBy(0, -90);");
 		Thread.sleep(2000);
-
 	}
 
 	@AfterMethod

@@ -23,7 +23,6 @@ public class Screenshots extends BasicMethods {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		initialize();
-
 	}
 
 	@Test

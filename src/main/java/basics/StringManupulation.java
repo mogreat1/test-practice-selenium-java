@@ -26,19 +26,12 @@ public class StringManupulation {
 		for (int i = 0; i < testval.length; i++) {
 			System.out.println(testval[i]);
 		}
-		
+
 		String x = "Hello";
 		String y = "World";
 		int a = 1;
-		int b =2;
-		
-		System.out.println(x+y+a+b);
-		
-		
-		
-		
-		
+		int b = 2;
 
+		System.out.println(x + y + a + b);
 	}
-
 }

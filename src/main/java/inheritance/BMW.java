@@ -12,10 +12,7 @@ public class BMW extends Cars {
 		System.out.println("Increasing speed of BMW");
 	}
 	
-	public void headupDispayNAvigation() {
+	public void headUpDisplayNavigation() {
 		System.out.println("BMW specific functionality");
 	}
-	
-	
-	
 }

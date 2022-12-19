@@ -1,4 +1,4 @@
-package Methods;
+package methods;
 
 public class MethodsToTest {
 
@@ -15,6 +15,4 @@ public class MethodsToTest {
         }
         return count;
     }
-
-
 }

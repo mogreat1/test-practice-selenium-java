@@ -29,7 +29,6 @@ public class BasicMethods {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	public void initialize() {
@@ -44,14 +43,10 @@ public class BasicMethods {
 
 		// driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-
 	}
 
 	public void tearDownTest() {
-
 		driver.quit();
 		driver = null;
-
 	}
-
 }

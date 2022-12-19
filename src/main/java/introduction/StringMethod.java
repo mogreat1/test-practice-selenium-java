@@ -33,26 +33,4 @@ public class StringMethod {
 		System.out.println(str.toUpperCase());
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

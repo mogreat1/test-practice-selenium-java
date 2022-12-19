@@ -3,12 +3,9 @@ package questions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
+
 
 public class CollectionDemo {
     // Print unique number from the list
@@ -36,22 +33,6 @@ public class CollectionDemo {
         }
         System.out.println(unique);
         return unique;
-    }
-
-    private int findUniqueNumberStream(int[] numbers) {
-        int unique = 0;
-        numbers = Arrays.stream(numbers).sorted().toArray();
-
-
-
-        return unique;
-    }
-
-
-    @Test
-    private void uniqueTest2() {
-        int a[] = {4, 5, 5, 5, 4, 6, 6, 9, 4};
-        findUniqueNumberStream(a);
     }
 
     @Test

@@ -17,7 +17,6 @@ public class SliderActions extends BasicMethods {
 		initialize();
 		driver.get("https://jqueryui.com/slider/");
 		js = (JavascriptExecutor) driver;
-
 	}
 
 	@Test
@@ -28,7 +27,6 @@ public class SliderActions extends BasicMethods {
 		Actions action = new Actions(driver);
 		action.dragAndDropBy(slider, 500, 0).perform();
 		Thread.sleep(2000);
-
 	}
 
 	@AfterMethod

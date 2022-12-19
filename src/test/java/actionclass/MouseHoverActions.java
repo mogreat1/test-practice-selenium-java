@@ -17,7 +17,6 @@ public class MouseHoverActions extends BasicMethods {
 		initialize();
 		driver.get("https://learn.letskodeit.com/p/practice");
 		js = (JavascriptExecutor) driver;
-
 	}
 
 	@Test
@@ -40,7 +39,6 @@ public class MouseHoverActions extends BasicMethods {
 
 		// move to top button and click it
 		action.moveToElement(top).click().perform();
-
 	}
 
 	@AfterTest

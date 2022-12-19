@@ -14,10 +14,8 @@ public class JSExecution extends BasicMethods {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
 		initialize();
 		js = (JavascriptExecutor) driver;
-
 	}
 
 	@Test
@@ -28,7 +26,6 @@ public class JSExecution extends BasicMethods {
 		// WebElement textBox = driver.findElement(By.id("name"));
 		WebElement textBox = (WebElement) js.executeScript("return document.getElementById('name');");
 		textBox.sendKeys("test");
-
 	}
 
 	@AfterMethod

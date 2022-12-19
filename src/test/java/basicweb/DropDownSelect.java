@@ -19,10 +19,8 @@ public class DropDownSelect extends BasicMethods {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
 		initialize();
 		driver.get(url);
-
 	}
 
 	@Test

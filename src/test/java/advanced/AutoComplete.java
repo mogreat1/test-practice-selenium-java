@@ -16,10 +16,8 @@ public class AutoComplete extends BasicMethods {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
 		initialize();
 		driver.get("https://www.expedia.com/");
-
 	}
 
 	@Test
@@ -39,8 +37,8 @@ public class AutoComplete extends BasicMethods {
 		List<WebElement> results = element.findElements(By.tagName("li"));
 		int size = results.size();
 
-		for (int i = 0; i < size; i++) {
-			System.out.println(results.get(i).getText());
+		for (WebElement webElement : results) {
+			System.out.println(webElement.getText());
 		}
 
 		for (WebElement result : results) {
@@ -53,7 +51,6 @@ public class AutoComplete extends BasicMethods {
 
 			}
 		}
-
 	}
 
 	@AfterMethod
